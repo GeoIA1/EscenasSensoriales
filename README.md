@@ -19,3 +19,22 @@ Diseñar una base conceptual y operativa para crear escenarios donde:
 - Prototipar una capa de datos geoespaciales mínima (POI, rutas, eventos).
 - Definir un piloto local con actores comunitarios.
 - Implementar un primer recorrido sensorial híbrido.
+
+## Componente de audio con carátula
+
+Se agregó un componente reutilizable para mostrar audio con imagen/carátula:
+
+- `components/audio/AudioWithCover.tsx`
+
+Ejemplo de uso:
+
+```tsx
+import AudioWithCover from "@/components/audio/AudioWithCover";
+
+<AudioWithCover
+  src="/audio/paisaje-sonoro.mp3"
+  coverImage="/images/paisaje-sonoro.jpg"
+  title="Paisaje Sonoro"
+  artist="Escenas Sensoriales"
+/>
+```
